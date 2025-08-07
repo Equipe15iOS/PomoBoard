@@ -153,7 +153,7 @@ struct HomeView: View {
             timeRemaining = totalTime
             progress = 0.0
         }
-        .onChange(of: settings.tempoFoco) { newValue in
+        .onChange(of: settings.tempoFoco) { oldValue, newValue in
             if !timerRunning {
                 timeRemaining = newValue * 60
                 progress = 0.0
