@@ -29,7 +29,7 @@ struct PomoBoardApp: App {
             ContentView()
             
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(for: PomodoroSession.self)
     }
 }
 	
